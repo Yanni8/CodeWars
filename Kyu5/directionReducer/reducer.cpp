@@ -35,7 +35,9 @@ std::vector<std::string> DirReduction::dirReduc(std::vector<std::string> &arr){
 }
 
 
-
+/*
+    URL: https://www.codewars.com/kata/550f22f4d758534c1100025a/cpp
+*/
 int main(int argc, char const *argv[])
 {
     std::vector<std::string> directions = {"NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"};
