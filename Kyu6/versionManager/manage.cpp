@@ -8,9 +8,6 @@ class VersionException
     public:
         VersionException(std::string msg){};
 };
-#include <string>
-#include <vector>
-#include <iostream>
 
 class Version
 {
