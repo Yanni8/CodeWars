@@ -10,7 +10,7 @@ std::string addString(std::string& s1, std::string& s2){
     }
     std::string result = "";
     std::reverse(s1.begin(), s1.end()); std::reverse(s2.begin(), s2.end());
-    unsigned int overflow = 0, n1 = 0, n2 = 0;
+    unsigned int overflow = 0;
 
     for (size_t ptr = 0; ptr < s1.size(); ptr++)
     {
@@ -55,16 +55,17 @@ std::string multiply(std::string a, std::string b) {
         a_pow++;   
     }
 
-    result = std::regex_replace(result, std::regex("^0*"), "");
-    if (result.empty())
+    auto firstNumber = result.find_first_not_of('0');
+    
+    if (firstNumber == std::string::npos)
     {
         return "0";
     }
     
-    return result;
+    return result.substr(firstNumber);
     
 }
 
 int main(int argc, char * argv[]){
-    std::cout << multiply("30", "0") << std::endl;
+    std::cout << multiply("451181880935769603243878837777032372751766432424948237032822727164431707551813209352258550743681144436283564017962489257", "243711845488109477170076437552297890994742775612640649382249680369389775242735990174025441519668726893339704325533165602763741713325858959481136662235623917080612110915875188854299752063982045") << std::endl;
 } 
