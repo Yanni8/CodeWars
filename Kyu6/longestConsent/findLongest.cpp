@@ -40,7 +40,9 @@ std::string LongestConsec::longestConsec(const std::vector<std::string> &strarr,
 
     return maxString;
 }
-
+/**
+ * URL: https://www.codewars.com/kata/56a5d994ac971f1ac500003e
+*/
 int main(int argc, char *argv[])
 {
     std::vector<std::string> arr = {"ejjjjmmtthh", "zxxuueeg", "aanlljrrrxx", "dqqqaaabbb", "oocccffuucccjjjkkkjyyyeehh"};
