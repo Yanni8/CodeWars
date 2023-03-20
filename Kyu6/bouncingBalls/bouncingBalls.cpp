@@ -24,7 +24,9 @@ int Bouncingball::bouncingBall(double h, double bounce, double window){
     return passedWindow * 2 - 1;
 }
 
-
+/**
+ * URL: https://www.codewars.com/kata/5544c7a5cb454edb3c000047
+*/
 int main(){
     LOG(Bouncingball::bouncingBall(3, 0.66, 1.5)); //Should be 3
 }
